@@ -80,18 +80,18 @@ var getIngredient = (ingre) => {
         getDataIngredient(ingredien);
     });
 };
-var getDataIngredient = (inger) => {
-    var result = " ";
-    result += `
-    <tr>
-        <td><img src ="${inger.iconUrl}" width= "10%"></td>
-        <td>${inger.name}</td>
-        <td>${inger.quantity}</td>
-        <td>${inger.unit[0].toLowerCase()}</td>
-    </tr>
-    `;
-    $('#data').append(result);
-}
+// var getDataIngredient = (inger) => {
+//     var result = " ";
+//     result += `
+//     <tr>
+//         <td><img src ="${inger.iconUrl}" width= "10%"></td>
+//         <td>${inger.name}</td>
+//         <td>${inger.quantity}</td>
+//         <td>${inger.unit[0].toLowerCase()}</td>
+//     </tr>
+//     `;
+//     $('#data').append(result);
+// }
 
 //function cut step from instruction
 var getStruction = (instruct) => {
