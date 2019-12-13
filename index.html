@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,33 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div class="row">
+        <div class=" row">
             <div class="col-4"></div>
             <div class="col-4">
-                <select name="" id="" class="btn-block">
-                    <option value="Ice_crem"></option>
-                    <option value="Ice_crem">Ice_crem</option>
-                    <option value="Ice_crem">Green Tea</option>
-                    <option value="Ice_crem">Sakora</option>
+                <select name="reciption" id="reciption" class="btn-block">
+                    <option value="" disabled selected>Choose Recipt</option>
                 </select>
             </div>
             <div class="col-4"></div>
         </div>
     </div>
+    <div class="card container mt-5">
+        <div class="row mt-5" id="nameData"></div>
+        <div class="row mt-5" id="number"></div>
+        <div class=" row mt-5">
+            <div class=" col-6 text-left">
+                <table id="data" class="table table-borderless">
+                   
+                </table>
+            </div>
+            <div class="col-6 text-center " id="instruc">
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/Reciption.js"></script>
 </body>
+
 </html>
