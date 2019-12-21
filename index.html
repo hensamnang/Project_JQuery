@@ -5,38 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project_JQuery</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <div class="container mt-5">
-        <div class=" row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <select name="reciption" id="reciption" class="btn-block">
-                    <option value="" disabled selected>Choose Recipt</option>
-                </select>
+<style>
+    .background {
+        background-image: url('image/background.jpg');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 250px;
+    }
+    .choose {
+        margin-top: 7%;
+    }
+</style>
+<body class="bg-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-primary shadow">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: aliceblue;">
+            <li class="material-icons">home</li></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: aliceblue;">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: aliceblue;">Fast Foods</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: aliceblue;">More</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Drinks</a>
+                    <a href="#" class="dropdown-item">Sweets</a>
+                    <a href="#" class="dropdown-item">Foods</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- selcet option  -->
+    <nav class="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 choose">
+                    <select name="reciption" id="reciption" class="btn-block">
+                        <option value="" disabled selected>Choose Recipt</option>
+                    </select>
+                </div>
+                <div class="col-4"></div>
             </div>
-            <div class="col-4"></div>
         </div>
-    </div>
+    </nav>
     <div class="card container mt-5">
-        <div class="row mt-5" id="nameData"></div>
-        <div class="row mt-5" id="number"></div>
-        <div class=" row mt-5">
-            <div class=" col-6 text-left">
-                <table id="data" class="table table-borderless">
-                   
-                </table>
+        <!-- heading and image of reciipe -->
+        <div class="row mt-5 " id="nameData"></div>
+        <!-- increase and decrease number -->
+        <div class="row mt-5">
+            <div class="col-2"></div>
+            <div class="col-3">
+                <h6 id="person" class="float-right"><strong>Number of person:</strong></h6 id="person">
             </div>
-            <div class="col-6 text-center " id="instruc">
-                
-
+            <div class="col-5" id="number">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <button type="button" id="minus"><strong>-</strong></button>
+                    </div>
+                    <div id="calculate"></div>
+                    <div class="input-group-append">
+                        <button type="button" id="add"><strong>+</strong></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- ingredient of recipes -->
+        <div class=" row mt-5">
+            <div class=" col-5">
+                <h4 id="ingredients"></h4>
+                <table id="data" class="table table-borderless"></table>
+            </div>
+            <!-- vertical line  -->
+            <div class="col-2 " id="vertical_line"></div>
+            <div class="col-5 text-center ">
+                <h4 id="instructions"></h4>
+                <table id="instruc" class="table table-borderless"></table>
             </div>
         </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/Reciption.js"></script>
 </body>
-
 </html>
