@@ -5,24 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Project JQuery</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<style>
-    .background {
-        background-image: url('image/background.jpg');
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 250px;
-    }
-    .choose {
-        margin-top: 7%;
-    }
-</style>
+
 <body class="bg-dark">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm bg-primary shadow">
+    <nav class="navbar navbar-expand-sm bg-success shadow">
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <a href="#" class="nav-link" style="color: aliceblue;">
@@ -44,28 +35,33 @@
             </li>
         </ul>
     </nav>
+    
     <!-- selcet option  -->
-    <nav class="background">
+    <h5 class="mb-4 text-center">ORDER FOOD DILIVERY FROM RESTAURENT</h5>
+    <nav class="background shadow">
         <div class="container">
             <div class="row">
                 <div class="col-4"></div>
-                <div class="col-4 choose">
+                <div class=" col-4 choose">
                     <select name="reciption" id="reciption" class="btn-block">
-                        <option value="" disabled selected>Choose Recipt</option>
+                        <button>
+                            <option value="" disabled selected>Choose Recipt</option>
+                        </button>
                     </select>
                 </div>
                 <div class="col-4"></div>
             </div>
         </div>
     </nav>
-    <div class="card container mt-5">
+
+    <div class="card  shadow container mt-5">
         <!-- heading and image of reciipe -->
         <div class="row mt-5 " id="nameData"></div>
         <!-- increase and decrease number -->
         <div class="row mt-5">
             <div class="col-2"></div>
             <div class="col-3">
-                <h6 id="person" class="float-right"><strong>Number of person:</strong></h6 id="person">
+                <h3 id="person" class="float-right"><strong>Number of person:</strong></h3>
             </div>
             <div class="col-5" id="number">
                 <div class="input-group mb-3">
@@ -94,7 +90,84 @@
             </div>
         </div>
     </div>
+
+    <!--Profile Card 3-->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3  ">
+                <div class="card profile-card-3">
+                    <div class="background-block">
+                        <img src="https://www.elsetge.cat/myimg/f/6-64084_original-resolution-popular-green-water-drops-background.jpg"
+                            alt="profile-sample1" class="background" />
+                    </div>
+                    <div class="profile-thumb-block">
+                        <img src="image/avocado.png" alt="profile-image" class="profile" />
+                    </div>
+                    <div class="card-content">
+                        <h2>Avocado Shake<small>Designer</small></h3>
+                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card profile-card-3">
+                    <div class="background-block">
+                        <img src="https://ak6.picdn.net/shutterstock/videos/2129936/thumb/1.jpg" alt="profile-sample1"
+                            class="background" />
+                    </div>
+                    <div class="profile-thumb-block">
+                        <img src="image/french.png" alt="profile-image" class="profile" />
+                    </div>
+                    <div class="card-content">
+                        <h2>Frenchs Creps<small>Designer</small></h3>
+                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i
+                                        class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card profile-card-3">
+                    <div class="background-block">
+                        <img src="https://p2.piqsels.com/preview/207/889/156/water-drops-leaf-grass.jpg"
+                            alt="profile-sample1" class="background" />
+                    </div>
+                    <div class="profile-thumb-block">
+                        <img src="image/saom.png" alt="profile-image" class="profile" />
+                    </div>
+                    <div class="card-content">
+                        <h2>Chean Saom with Egg<small>Designer</small></h3>
+                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i
+                                        class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card profile-card-3">
+                    <div class="background-block">
+                        <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1522685991000/photosp/d0904e1c-8e22-4e5c-afbf-688ed2d1210a/stock-photo-daytime-nature-beauty-in-nature-water-backgrounds-green-scenic-beauty-life-awesome-d0904e1c-8e22-4e5c-afbf-688ed2d1210a.jpg"
+                            alt="profile-sample1" class="background" />
+                    </div>
+                    <div class="profile-thumb-block">
+                        <img src="image/fish.png" alt="profile-image" class="profile" />
+                    </div>
+                    <div class="card-content">
+                        <h2>Fry Fish<small>Designer</small></h3>
+                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i
+                                        class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/Reciption.js"></script>
 </body>
+
 </html>

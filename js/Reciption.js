@@ -7,10 +7,12 @@ $(document).ready(function () {
     //hide and show number of person
     $('#number').hide();
     $('#person').hide();
+    $('.card').hide();
 
     $('#reciption').on('change', () => {
     $('#number').show();
     $('#person').show();
+    $('.card').show();
         var chooseRecipes = $('#reciption').val();
         getDataUrl(chooseRecipes);
     });
@@ -54,7 +56,7 @@ var getHead = (name, icon) => {
     heading += `
     <div class="col-3"></div>
     <div class="col-3" class=" btn text-right"><h2>${name}</h2></div>
-    <div class="col-3"><img src="${icon}" width="70%"></div>
+    <div class="col-3 "><img src="${icon}" class="shadow rounded-circle" width="90%" ></div>
     <div class="col-3"></div>
     `;
     $('#nameData').html(heading);
@@ -104,7 +106,7 @@ var executeNumber = (num) =>{
 var getDataIngredient = (ing) => {
     // create for heading
     var ingredients = "";
-    ingredients += `<h4 class="text-center">Ingredients</h4>`;
+    ingredients += `<h4 class="text-center text-primary mb-3"><strong>Ingredients</strong></h4>`;
     //result ingredients from recipes
     var result = " ";
     ing.ingredients.forEach(ingre => {
@@ -129,7 +131,7 @@ var getStruction = (instruct) => {
     $('#vertical_line').html(verticalline);
     //create for instruction 
     var instruction = "";
-        instruction += `<h4  class="text-left">Instruction</h4>`; 
+        instruction += `<h4  class="text-left text-primary mb-3"><strong>Instruction</strong></h4>`; 
         $('#instructions').html(instruction);
     //create for put intruction
     var outputInstruction= "";
